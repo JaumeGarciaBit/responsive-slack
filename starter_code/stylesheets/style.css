@@ -11,7 +11,6 @@ width <  DONE
 1024px > width > 960px
 width > 1200px
 */
-
 body
 {
     width: 100%;
@@ -28,20 +27,22 @@ nav
     top:0;
 
     background-color: white;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -2%;
+    margin-right: -2%;
+
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
-    width: 100%;
+    width: 104%;
     height: 100px;
 
-    border-bottom: solid 1px #5b5e6d;
+    border-bottom: solid 1px #5b5e6d ;
     border-top: solid 1px #5b5e6d;
 }
 nav>img
 {
+    margin-left: 5%;
     width: auto;
     height: 100%;
 }
@@ -52,6 +53,7 @@ nav li
 }
 i
 {
+    margin-right: 5%;
     color: #5b5e6d;
 }
 nav>i:first-of-type
@@ -80,16 +82,15 @@ header>img
     height: 400px;
     width: auto;
 }
-header>h1
+header>div>h1
 {
     align-self: flex-start;
     margin-top: 20px;
     color: #2C303F;
     font-size: 5.3em;
 }
-header>p:first-of-type
+header>div>p:first-of-type
 {
-
     margin-top: -20px;
 
     color:#5b5e6d;
@@ -113,8 +114,9 @@ button.startButton, button.startButton2
     height: 80px;
     width: 100%;
 }
-header>p:last-of-type
+header>div>p:last-of-type
 {
+    margin-top: 10px;
     text-align: center;
 
     color:#5b5e6d;
@@ -299,10 +301,17 @@ footer>div:last-of-type>div:last-of-type>i
 }
 
 
-@media (min-width: 767px) and (max-width: 961px)
+@media (min-width: 767px)
 {
+    header>div>p:last-of-type
+    {
+        text-align: left;
+        font-size: 1.5em;
+    }
+
     div.mailbuttons
     {
+
         width: 100%;
         display: flex;
         justify-content: flex-start;
@@ -357,8 +366,8 @@ footer>div:last-of-type>div:last-of-type>i
     {
         display: block;
 
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
         padding-left: 3%;
         padding-right: 3%;
         padding-bottom: 4%;
@@ -469,7 +478,7 @@ footer>div:last-of-type>div:last-of-type>i
         color: #2C303F;
         font-size: 1.2em;
     }
-    footer>div:first-of-type  li:Not(:first-child)
+    footer>div:first-of-type  li:Not(:first-child), footer>div:last-of-type span
     {
         color: #5b5e6d;
         font-size: 1em;
@@ -482,7 +491,6 @@ footer>div:last-of-type>div:last-of-type>i
         
         width: 110%;
         margin-left: -6%;
-
     }
     footer>div:last-of-type ul
     {
@@ -495,5 +503,87 @@ footer>div:last-of-type>div:last-of-type>i
         
         font-size: 1em;
     }
+}
+@media (min-width: 960px)
+{
 
+    div.partnerImages>div
+    {
+        height: 200px;
+        width: 30%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+
+        border: solid 1px #5b5e6d;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    nav>i:first-of-type
+    {
+        display: none;
+    }
+
+    nav ul
+    {
+        width: auto;
+        margin-right: 3%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    nav li
+    {
+        margin: 50px;
+        display: inline;
+        color: #5b5e6d;
+        font-size: 1.5em;
+        opacity: 80%;
+    }
+    nav li:last-of-type
+    {
+        color: #5b5e6d;
+        border: solid 2px #5b5e6d;
+        padding: 10px;
+    }
+    header
+    {
+        flex-direction: row;
+    }
+    header>img
+    {
+        margin: 50px;
+        margin-left: 0%;
+        width: 40%;
+        height: auto;
+        order: -1;
+    }
+    header>div>h1
+    {
+        font-size: 6em;
+    }
+
+    div.mailbuttons
+    {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    input.emailInput, input.emailInput2
+    {
+        display: none;
+    }
+    button.startButton2
+    {
+        width: 50%;
+        height: 80px;
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    main div.mailbuttons
+    {
+        width: 30%;
+        justify-content: flex-end;
+    }
 }
