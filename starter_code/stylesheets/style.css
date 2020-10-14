@@ -15,6 +15,8 @@ body
 {
     width: 100%;
     height: auto;
+    font-size: 10px;
+    margin: 0%;
 }
 p
 {
@@ -35,16 +37,16 @@ nav
     align-items: center;
 
     width: 104%;
-    height: 100px;
+    height: 60px;
 
-    border-bottom: solid 1px #5b5e6d ;
-    border-top: solid 1px #5b5e6d;
+    border-bottom: solid 1px #EBEBEB  ;
+    border-top: solid 1px #EBEBEB ;
 }
 nav>img
 {
     margin-left: 5%;
     width: auto;
-    height: 100%;
+    height: 80%;
 }
 nav li
 {
@@ -96,23 +98,30 @@ header>div>p:first-of-type
     color:#5b5e6d;
     font-size: 2em;
 }
+
 input.emailInput, input.emailInput2
 {
+    height: 46px;
+    width: 93.5%;
     font-size: 2em;
     padding-left: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 
-    height: 80px;
-    width: 94.5%;
+    border: solid #5b5e6d 1px;
+    border-radius: 8px;
 }
 
 button.startButton, button.startButton2
 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
-    background-color: #192592;
-    height: 80px;
+    font-weight: bold;
+    background-color: #4049AA;
+    border:none;
+    height: 50px;
     width: 100%;
+
+    border-radius: 8px;
 }
 header>div>p:last-of-type
 {
@@ -178,16 +187,19 @@ div.partnerImages>div>img
     padding-right: 30%;
     height: auto;
     width: 30%;
-    border-bottom: solid 1px #5b5e6d;
+    border-bottom: solid 1px #EBEBEB;
 }
 main>div:first-of-type>button
 {
-    font-size: 1.8em;
-    color: #192592;
-    border-color: #192592;
-    background-color: white;
-    height: 80px;
+    height: 50px;
     width: 100%;
+
+    border: solid #192592 1px;
+    background-color: white;
+    border-radius:  8px;
+    
+    font-size: 1.5em;
+    color: #192592;
 }
 
 main>div>h3
@@ -222,7 +234,6 @@ footer>img
 }
 footer>div:first-of-type
 {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -232,7 +243,7 @@ footer>div:first-of-type
 
 footer>div:first-of-type ul
 {
-    margin-right: 80px;
+    margin-right: 20%;
     list-style: none;
 }
 footer>div:first-of-type li
@@ -250,7 +261,7 @@ footer>div:first-of-type li:first-child
 footer>div:first-of-type  li:Not(:first-child)
 {
     color: #5b5e6d;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 
@@ -306,25 +317,24 @@ footer>div:last-of-type>div:last-of-type>i
     header>div>p:last-of-type
     {
         text-align: left;
-        font-size: 1.5em;
     }
 
     div.mailbuttons
     {
-
-        width: 100%;
         display: flex;
         justify-content: flex-start;
+        
+        width: 100%;
     }
 
     input.emailInput
     {
         width: 300px;
+        
     }
 
     button.startButton
     {
-        height: 86px;
         width: 200px;
         margin-left: 50px;
         font-size: 1.6em;
@@ -386,17 +396,18 @@ footer>div:last-of-type>div:last-of-type>i
         font-size: 1.4em;
         width: 300px;
     }
+
+
     main>div>div.mailbuttons
     {
         float: right;
 
-        margin-top: -115px;
+        margin-top: -60px;
         width: 350px;        
     }
     input.emailInput2
     {
         width: 50%;
-        height: 80px;
         margin-bottom: 0%;
         margin-right: 10px;
         font-size: 1.4em;
@@ -404,7 +415,6 @@ footer>div:last-of-type>div:last-of-type>i
     button.startButton2
     {
         width: 50%;
-        height: auto;
         font-size: 1.2em;
     }
     div.partnerImages
@@ -422,7 +432,7 @@ footer>div:last-of-type>div:last-of-type>i
         margin-bottom: 0%;
         margin-top: 0%;
 
-        border-bottom: solid 1px #5b5e6d;
+        border-bottom: solid 1px #EBEBEB;
     }
 
     div.partnerImages>div>img
@@ -439,7 +449,7 @@ footer>div:last-of-type>div:last-of-type>i
     }
     div.partnerImages>div:nth-of-type(odd)
     {
-        border-right: solid 1px #5b5e6d;
+        border-right: solid 1px #EBEBEB;
     }
 
     footer
@@ -476,12 +486,10 @@ footer>div:last-of-type>div:last-of-type>i
     {
         font-weight: bold;
         color: #2C303F;
-        font-size: 1.2em;
     }
     footer>div:first-of-type  li:Not(:first-child), footer>div:last-of-type span
     {
         color: #5b5e6d;
-        font-size: 1em;
     }
     
     footer>div:last-of-type
@@ -489,8 +497,8 @@ footer>div:last-of-type>div:last-of-type>i
         display: flex;
         justify-content: space-between; 
         
-        width: 110%;
-        margin-left: -6%;
+        width: 110.5%;
+        margin-left: -5%;
     }
     footer>div:last-of-type ul
     {
@@ -501,7 +509,7 @@ footer>div:last-of-type>div:last-of-type>i
         padding-left: 0%;
         padding-right: 150px;
         
-        font-size: 1em;
+        font-size: 1.5em;
     }
 }
 @media (min-width: 960px)
@@ -514,7 +522,7 @@ footer>div:last-of-type>div:last-of-type>i
         margin-bottom: 0%;
         margin-top: 0%;
 
-        border: solid 1px #5b5e6d;
+        border: solid 1px #EBEBEB;
     }
 }
 
@@ -574,10 +582,14 @@ footer>div:last-of-type>div:last-of-type>i
     {
         display: none;
     }
+    button.startButton
+    {
+        margin-left: 0px;
+    }
+
     button.startButton2
     {
         width: 50%;
-        height: 80px;
         font-size: 1.2em;
         margin-left: 20px;
     }
